@@ -1,4 +1,9 @@
 body{
     margin: 0;
     padding: 0;
+    background: url("../images/background.jpg") center center no-repeat fixed;
+    background-size: cover;
+}
+.header h1{
+    text-align: center;
 }
