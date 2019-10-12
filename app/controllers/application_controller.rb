@@ -9,10 +9,6 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  get "/" do
-    erb :sign_up
-  end
-
   get "/sessions/sign_up" do 
     erb :"sessions/sign_up"
   end
