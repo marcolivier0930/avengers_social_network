@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
 
 #   # GET: /users
-#   get "/users" do
-#     erb :"/users/index.html"
-#   end
+  get "/users" do
+    erb :"/users/index.html"
+  end
 
 #   # GET: /users/new
 #   get "/users/new" do
@@ -16,9 +16,11 @@ class UsersController < ApplicationController
 #   end
 
 #   # GET: /users/5
-#   get "/users/:id" do
-#     erb :"/users/show.html"
-#   end
+  get "/users/:id" do
+    binding.pry
+    @user = User.find(params[:id])
+    erb :"/users/show.html"
+  end
 
 #   # GET: /users/5/edit
 #   get "/users/:id/edit" do
@@ -34,4 +36,4 @@ class UsersController < ApplicationController
 #   delete "/users/:id/delete" do
 #     redirect "/users"
 #   end
-# end
+ end

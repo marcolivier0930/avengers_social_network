@@ -6,5 +6,6 @@ end
 
 use SessionController
 run ApplicationController
+use LoginsController
 use SidekicksController
-use UsersController
+use UsersController 
