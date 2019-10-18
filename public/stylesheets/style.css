@@ -5,6 +5,7 @@ body{
     text-align: center;
     background: url("../images/background.jpg") center center no-repeat fixed;
     background-size: cover;
+    color: white;
 }
 .header h1{
     text-align: center;
@@ -17,4 +18,45 @@ form{
 input{
     padding: 10px;
     margin-bottom: 10px;
+}
+.login_button{
+    color: white;
+    background-color: blueviolet;
+    font-style: bold;
+}
+input[type="name"]{
+    border: 5px black solid;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 200px;
+}
+input[type="password"]{
+    border: 5px black solid;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 200px;
+}
+input[type="submit"]{
+    background-color: #0e0e52;
+    color: white;
+    border-radius: 5px;
+    border: 5px #0e0e52 solid;
+    width: 200px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+.form_link{
+    background: white;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 5px white solid;
 }

@@ -1,42 +1,22 @@
-<!DOCTYPE html>
-<html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <title>Avengers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  <body>
     <header>
         <div class="header">
             <h1><img src="../images/logo.png" width="80px" height="80px" alt="Avengers Logo"/></h1>
         </div>
     </header>
 
-    <form method="POST" action="/sessions/user_page">
+    <% if flash.has?(:message) %>
+      <p><%= flash[:message] %></p>
+    <% end %>
+
+    <form method="POST" action="/sign_up">
         <input type="name" name="hero_name" placeholder="Enter your hero name"></br>
         <input type="name" name="user_name" placeholder="Enter your user name"></br>
         <input type="password" name="password" placeholder="Enter your password" required></br>
-        <input tpye="number" name="age" placeholder="Age"></br>
         <input type="submit" value="Sign Up">
     </form>
 
-      <p class="login_button"><a href="/logins/index.html.erb" alt="Sign In">Login</a></p>
+      <button type="button" class="form_link"><a href="/logins">Login</a></button>
 
       <footer class="branding">
         <small>&copy; 2019 <strong>Avengers</strong></small>
       </footer>
-
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <!--[if lt IE 7]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
-    <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
-  <![endif]-->
-  </body>
-</html>

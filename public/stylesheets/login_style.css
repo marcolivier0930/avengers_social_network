@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    color: white;
+}
+
+h1{
+    color: rebeccapurple;
+    margin-bottom: 10px;
+}
